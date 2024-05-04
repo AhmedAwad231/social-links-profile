@@ -1,0 +1,87 @@
+@font-face{
+    font-family: "inter";
+    src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+body{
+    background-color: var(--Off-Black);
+    color: var(--White);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "inter";
+}
+main{
+    max-width: 400px;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+    text-align: center;
+    margin: 10px 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Grey);
+    border-radius: 18px;
+    padding: 30px 50px;
+}
+.card .img-box{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40%;
+}
+.card .img-box img{
+    width: 100%;
+}
+.card .text{
+    text-align: center;
+}
+.card .text h1{
+    font-size: 26px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.card .text h2{
+    color: var(--Green);
+    font-size: 14px;
+    font-weight: 500;
+}
+.card .text p{
+    font-size: 14px;
+    margin: 20px 0;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card .btns .btn{
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: var(--Grey);
+    border-radius: 10px;
+    width: 120%;
+    transition: all .3s ease-out;
+}
+.card .btns .btn:hover{
+    background-color: var(--Green);
+    color: var(--Off-Black);
+}
